@@ -1,16 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-
+import { StyleSheet, Text, View , Pressable} from 'react-native';
+import {  SearchBar} from "react-native-screens"
 import {AntDesign} from "@expo/vector-icons"
+import React from "react"
+
+
+
 
 export default function App() {
   return (
 
     <View style={styles.container}>
       <View style= {styles.main}>
+        <Link href="/search" asChild>
+
         <View style= {styles.SearchBar}>
+          <Pressable style ={styles.SearchBar}>
+
             <Text>search for doctors, appointment</Text>
             <AntDesign name="search1" size ={24} color ="black" />
+          </Pressable>
+        </Link>
+
         </View>
       
 
